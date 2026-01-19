@@ -6,12 +6,12 @@
 }
 
 :root, [data-theme="light"] {
-    background-image: url('../images/light_background.jpg');
+    background-image: url('images/light_background.jpg');
 }
 
 /* Темная тема */
 [data-theme="dark"] {
-    background-image: url('../images/dark_background.jpg');
+    background-image: url('images/dark_background.jpg');
     --text-color: #f0f0f0;
     --btn-bg: #333333;
     --btn-text: #f0f0f0;
@@ -196,4 +196,5 @@ p {
 
 h2 {
     font-size: 30px;
+
 }
