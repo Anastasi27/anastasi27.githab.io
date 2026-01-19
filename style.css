@@ -1,0 +1,199 @@
+/* Светлая тема (по умолчанию) */
+:root {
+    --text-color: #333333;
+    --btn-bg: #f0f0f0;
+    --btn-text: #333;
+}
+
+:root, [data-theme="light"] {
+    background-image: url('../images/light_background.jpg');
+}
+
+/* Темная тема */
+[data-theme="dark"] {
+    background-image: url('../images/dark_background.jpg');
+    --text-color: #f0f0f0;
+    --btn-bg: #333333;
+    --btn-text: #f0f0f0;
+}
+
+/* Применение переменных */
+body {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: var(--text-color);
+    transition: background-image 0.5s ease, color 0.3s;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Кнопка */
+.theme-btn {
+    top: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    background-color: var(--btn-bg);
+    color: var(--btn-text);
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    transition: all 0.3s;
+    z-index: 1000;
+}
+
+.theme-btn:hover {
+    transform: scale(1.05);
+}
+
+.header {
+    background-color: rgb(255, 255, 255, 0.8);
+    backdrop-filter: blur(20px);
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.menu {
+   align-items: center; 
+}
+
+li {
+    display: inline;
+    padding: 10px;
+}
+
+li button {
+    padding: 10px 15px;
+    background-color: var(--btn-bg);
+    color: var(--btn-text);
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    transition: all 0.3s;
+    z-index: 1000;
+}
+
+li button:hover {
+    transform: scale(1.05);
+}
+
+.container, .container_first {
+    background-color: rgb(255, 255, 255, 0.3);
+    backdrop-filter: blur(5px);
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    font-size: larger;
+}
+
+.container_first {
+    margin-top: 150px;
+    margin-bottom: 80px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.container {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 0px;
+    margin-bottom: 80px;
+}
+
+.text {
+    margin: 50px;
+    color: var(--text-color);
+}
+
+.photo {
+    max-width: 600px;
+    max-height: 400px;
+}
+
+.my_photo {
+    max-width: 400px;
+    border-radius: 100%;
+}
+
+.photo_rad {
+    max-width: 600px;
+    border-radius: 100px;
+}
+
+.heading {
+    text-align: center;
+    font-size: 42px;
+    margin-top: 150px;
+    margin-bottom: 70px;
+    color: var(--text-color);
+}
+
+
+.buttons {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.timeline {
+    background-color: rgb(255, 255, 255, 0.3);
+    backdrop-filter: blur(5px);
+    align-items: center;
+    font-size: larger;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 40px auto;
+    max-width: 800px;
+}
+
+.serts .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer {
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(5px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 50px;
+    margin-bottom: 0px;
+    bottom: 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: #333333;
+}
+
+.icons img {
+    max-width: 40px;
+}
+
+.icons {
+    display: flex;
+    gap: 15px;
+}
+
+p {
+    line-height: 1.5;
+    max-width: 600px;
+}
+
+h2 {
+    font-size: 30px;
+}
